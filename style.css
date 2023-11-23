@@ -186,22 +186,18 @@ main {
 /*     TRANSLATE     */
 /* ----------------- */
 
-/* #translate .card-container {
-  & .overlay {
-    height: 180%;
+#raised .card-container {
+  transition: transform 0.6s;
+  & .card {
+    transition: box-shadow 0.6s;
   }
-  & .card-content {
-    transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
-    align-items: center;
-    text-align: center;
 
-    & button {
-      width: 100%;
-    }
-  }
   &:hover {
-    & .card-content {
-      transform: translateY(calc(100% - 25rem));
+    transform: translate(-8px, -8px);
+    transition: transform 0.6s;
+    & .card {
+      box-shadow: 6.0px 12.0px 12.0px hsl(0deg 0% 0% / 0.31);
+      transition: box-shadow 0.6s;
     }
   }
 
@@ -209,4 +205,4 @@ main {
     display: flex;
     align-items: flex-end;
   }
-} */
+}
